@@ -1,1 +1,257 @@
-<h1>Hello GitHub Pages!</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a2af67c8a95392eb8294ef8e58fb3c6b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a2af67c8a95392eb8294ef8e58fb3c6b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a2af67c8a95392eb8294ef8e58fb3c6b = L.map(
+                "map_a2af67c8a95392eb8294ef8e58fb3c6b",
+                {
+                    center: [40.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2.3,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_675d1e7f339eada9f4a3ec844c9f5857 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "\u00a9 OpenStreetMap contributors \u00a9 CARTO",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_675d1e7f339eada9f4a3ec844c9f5857.addTo(map_a2af67c8a95392eb8294ef8e58fb3c6b);
+        
+    
+            var marker_f32ef616ce28a09ceb546603be122661 = L.marker(
+                [52.4833, 13.3667],
+                {
+}
+            ).addTo(map_a2af67c8a95392eb8294ef8e58fb3c6b);
+        
+    
+            var icon_0d23d8dabcc3b02dcd836c3238fff287 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c98326861628c33b1075f35c41bba123 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_447a6cede8fe96672ceba161c59c307f = $(`<div id="html_447a6cede8fe96672ceba161c59c307f" style="width: 100.0%; height: 100.0%;">B.Sc. Business Informatics (2020-2024) 🎓</div>`)[0];
+                popup_c98326861628c33b1075f35c41bba123.setContent(html_447a6cede8fe96672ceba161c59c307f);
+            
+        
+
+        marker_f32ef616ce28a09ceb546603be122661.bindPopup(popup_c98326861628c33b1075f35c41bba123)
+        ;
+
+        
+    
+    
+            marker_f32ef616ce28a09ceb546603be122661.bindTooltip(
+                `<div>
+                     Berlin, Germany
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f32ef616ce28a09ceb546603be122661.setIcon(icon_0d23d8dabcc3b02dcd836c3238fff287);
+            
+    
+            var marker_09cd4c1ac86b7bd400c1308f77e35f04 = L.marker(
+                [52.5503, 13.3383],
+                {
+}
+            ).addTo(map_a2af67c8a95392eb8294ef8e58fb3c6b);
+        
+    
+            var icon_7d72b9c21e9851dbb1c636c766d683ed = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_da4abc8b8da4b40fee356086cc3ae247 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d544e203ac1ec1367b45f9423914e095 = $(`<div id="html_d544e203ac1ec1367b45f9423914e095" style="width: 100.0%; height: 100.0%;">M.Sc. Media Informatics (2025-2025) 🎓</div>`)[0];
+                popup_da4abc8b8da4b40fee356086cc3ae247.setContent(html_d544e203ac1ec1367b45f9423914e095);
+            
+        
+
+        marker_09cd4c1ac86b7bd400c1308f77e35f04.bindPopup(popup_da4abc8b8da4b40fee356086cc3ae247)
+        ;
+
+        
+    
+    
+            marker_09cd4c1ac86b7bd400c1308f77e35f04.bindTooltip(
+                `<div>
+                     Berlin, Germany
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_09cd4c1ac86b7bd400c1308f77e35f04.setIcon(icon_7d72b9c21e9851dbb1c636c766d683ed);
+            
+    
+            var marker_a3131fdae3a5702cb82184c44c004f33 = L.marker(
+                [52.4833, 13.3667],
+                {
+}
+            ).addTo(map_a2af67c8a95392eb8294ef8e58fb3c6b);
+        
+    
+            var icon_62fdfca218e9aed10fa3b435cc4e9ce9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_396cab586ac3ecf0fc965ba4ddcc151f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_50325b7cc803b010fa57593096da16cd = $(`<div id="html_50325b7cc803b010fa57593096da16cd" style="width: 100.0%; height: 100.0%;">M.Sc. BIPM (2025-Now) 🎓</div>`)[0];
+                popup_396cab586ac3ecf0fc965ba4ddcc151f.setContent(html_50325b7cc803b010fa57593096da16cd);
+            
+        
+
+        marker_a3131fdae3a5702cb82184c44c004f33.bindPopup(popup_396cab586ac3ecf0fc965ba4ddcc151f)
+        ;
+
+        
+    
+    
+            marker_a3131fdae3a5702cb82184c44c004f33.bindTooltip(
+                `<div>
+                     Berlin, Germany
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a3131fdae3a5702cb82184c44c004f33.setIcon(icon_62fdfca218e9aed10fa3b435cc4e9ce9);
+            
+    
+            var poly_line_724ed33e24daec7d0d132966b2ce03c1 = L.polyline(
+                [[52.4833, 13.3667], [52.48439842170199, 13.366235122195262], [52.48549684137226, 13.365770221231715], [52.486595259010656, 13.365305297107323], [52.487693674617006, 13.364840349820051], [52.48879208819116, 13.36437537936787], [52.48989049973295, 13.363910385748744], [52.49098890924222, 13.363445368960633], [52.49208731671882, 13.362980329001513], [52.49318572216257, 13.362515265869346], [52.49428412557331, 13.362050179562099], [52.49538252695091, 13.36158507007773], [52.49648092629517, 13.361119937414214], [52.497579323605954, 13.360654781569506], [52.4986777188831, 13.360189602541578], [52.49977611212643, 13.359724400328393], [52.500874503335815, 13.359259174927912], [52.501972892511056, 13.358793926338102], [52.50307127965202, 13.358328654556926], [52.504169664758535, 13.357863359582344], [52.505268047830455, 13.357398041412322], [52.50636642886761, 13.356932700044823], [52.50746480786983, 13.35646733547781], [52.508563184836945, 13.356001947709249], [52.50966155976884, 13.355536536737093], [52.51075993266531, 13.355071102559311], [52.511858303526225, 13.35460564517386], [52.51295667235141, 13.354140164578709], [52.51405503914069, 13.353674660771812], [52.51515340389393, 13.353209133751136], [52.51625176661095, 13.352743583514638], [52.5173501272916, 13.352278010060276], [52.51844848593572, 13.351812413386018], [52.51954684254314, 13.35134679348982], [52.520645197113716, 13.350881150369638], [52.52174354964727, 13.35041548402344], [52.522841900143646, 13.34994979444918], [52.52394024860269, 13.34948408164482], [52.52503859502423, 13.349018345608316], [52.52613693940811, 13.348552586337634], [52.52723528175417, 13.348086803830723], [52.528333622062256, 13.347620998085546], [52.5294319603322, 13.347155169100063], [52.53053029656384, 13.346689316872228], [52.531628630757005, 13.3462234414], [52.53272696291155, 13.345757542681337], [52.53382529302733, 13.345291620714198], [52.53492362110414, 13.344825675496537], [52.536021947141855, 13.34435970702631], [52.53712027114029, 13.343893715301482], [52.5382185930993, 13.343427700319994], [52.53931691301873, 13.342961662079817], [52.5404152308984, 13.342495600578902], [52.54151354673815, 13.3420295158152], [52.54261186053784, 13.341563407786671], [52.54371017229729, 13.34109727649127], [52.544808482016336, 13.340631121926949], [52.54590678969484, 13.340164944091667], [52.5470050953326, 13.339698742983378], [52.548103398929484, 13.339232518600038], [52.54920170048535, 13.338766270939592], [52.5503, 13.3383]],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_a2af67c8a95392eb8294ef8e58fb3c6b);
+        
+    
+            var poly_line_bce4bf41c4f46b1ce8917837fe6fccfd = L.polyline(
+                [[52.5503, 13.3383], [52.54920170048535, 13.338766270939589], [52.54810339892949, 13.339232518600037], [52.547005095332594, 13.339698742983378], [52.545906789694826, 13.34016494409167], [52.54480848201633, 13.34063112192695], [52.54371017229729, 13.341097276491274], [52.54261186053784, 13.341563407786671], [52.54151354673816, 13.342029515815202], [52.540415230898404, 13.342495600578898], [52.53931691301873, 13.34296166207982], [52.5382185930993, 13.343427700319998], [52.53712027114029, 13.343893715301478], [52.536021947141855, 13.34435970702631], [52.53492362110414, 13.344825675496532], [52.53382529302733, 13.345291620714193], [52.53272696291156, 13.345757542681335], [52.53162863075701, 13.346223441399998], [52.53053029656384, 13.346689316872226], [52.529431960332204, 13.34715516910006], [52.528333622062256, 13.347620998085546], [52.52723528175417, 13.348086803830725], [52.526136939408104, 13.348552586337634], [52.52503859502423, 13.349018345608318], [52.52394024860269, 13.349484081644821], [52.52284190014364, 13.349949794449184], [52.52174354964726, 13.35041548402344], [52.52064519711371, 13.350881150369641], [52.51954684254315, 13.35134679348982], [52.518448485935714, 13.35181241338602], [52.51735012729161, 13.352278010060276], [52.51625176661095, 13.352743583514636], [52.515153403893926, 13.353209133751136], [52.51405503914069, 13.35367466077181], [52.5129566723514, 13.35414016457871], [52.51185830352622, 13.35460564517386], [52.510759932665316, 13.355071102559311], [52.50966155976884, 13.355536536737091], [52.50856318483696, 13.356001947709245], [52.507464807869816, 13.356467335477815], [52.506366428867594, 13.356932700044824], [52.505268047830455, 13.357398041412322], [52.50416966475853, 13.357863359582348], [52.503071279652026, 13.358328654556924], [52.501972892511056, 13.3587939263381], [52.5008745033358, 13.359259174927914], [52.49977611212643, 13.359724400328393], [52.498677718883094, 13.36018960254158], [52.497579323605954, 13.360654781569506], [52.49648092629517, 13.361119937414214], [52.495382526950905, 13.36158507007773], [52.494284125573316, 13.362050179562097], [52.493185722162565, 13.362515265869348], [52.492087316718816, 13.362980329001514], [52.490988909242226, 13.363445368960633], [52.48989049973295, 13.36391038574874], [52.48879208819116, 13.36437537936787], [52.487693674617006, 13.364840349820053], [52.48659525901065, 13.365305297107323], [52.48549684137226, 13.365770221231715], [52.484398421702, 13.366235122195262], [52.4833, 13.3667]],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_a2af67c8a95392eb8294ef8e58fb3c6b);
+        
+</script>
+</html>

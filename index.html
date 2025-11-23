@@ -88,13 +88,6 @@
         <div class="w-full max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Top Layout: Image & Intro -->
             <div class="flex flex-col md:flex-row items-start gap-12 mb-16">
-                <!-- Avatar / Image -->
-                <div class="w-full md:w-1/3 flex justify-center sticky top-24">
-                    <div class="relative">
-                        <div class="absolute inset-0 bg-primary blur-2xl opacity-20 rounded-full"></div>
-                        <img src="https://api.dicebear.com/9.x/avataaars/svg?seed=Felix&backgroundColor=b6e3f4" alt="Profile Picture" class="relative w-64 h-64 rounded-full border-4 border-white shadow-2xl hover:scale-105 transition-transform duration-300">
-                    </div>
-                </div>
                 
                 <!-- Content -->
                 <div class="w-full md:w-2/3">
@@ -106,9 +99,9 @@
                     
                     <!-- Career & Education Timeline -->
                     <div class="mb-10">
-                        <h3 class="text-xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+                        <h2 class="text-xl font-bold text-slate-900 mb-6 flex items-center gap-2">
                             <i class="fas fa-history text-primary"></i> Professional Career
-                        </h3>
+                        </h2>
                         <div class="border-l-2 border-slate-200 ml-3 space-y-8 pl-8 relative">
                             <!-- Item 3 -->
                             <div class="relative">
@@ -136,9 +129,9 @@
 
                     <!-- Career & Education Timeline -->
                     <div class="mb-10">
-                        <h3 class="text-xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+                        <h2 class="text-xl font-bold text-slate-900 mb-6 flex items-center gap-2">
                             <i class="fas fa-history text-primary"></i> Academic Background
-                        </h3>
+                        </h2>
                         <div class="border-l-2 border-slate-200 ml-3 space-y-8 pl-8 relative">
                             <!-- Item 3 -->
                             <div class="relative">
@@ -175,17 +168,30 @@
                 </div>
             </div>
         </div>
-    </section>
 
-     <section id="journeyMap" class="py-20 bg-slate-50">
-        <div class="w-full max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-slate-900 mb-4">My "Journey" Map</h2>
-                <p class="text-slate-600 max-w-2xl mx-auto">Careful, don't let yourself be overwhelmed.</p>
+        <!-- Map Section -->
+        <div class="mb-10">
+            <h2 class="text-xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+                <i class="fas fa-map-marker-alt text-primary"></i> My Jounrey Map
+            </h2>
+           <h3 class="text-xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+                <i class="fas fa-map-marker-alt text-primary"></i> Careful, don't let yourself be overwhelmed.
+            </h3>
+         <!-- Added max-w-2xl to constrain the map width so it doesn't stretch horizontally too much -->
+            <div class="rounded-xl overflow-hidden shadow-sm border border-slate-200 h-96 md:h-80 relative w-full max-w-2xl">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d155426.1369466089!2d13.3029161!3d52.4862437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e373f035901%3A0x42120465b5e3b70!2sBerlin!5e0!3m2!1sen!2sde!4v1684846288154!5m2!1sen!2sde" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
-            <div class="folium-map" id="map_1d7660d6b4ccfe70cec96ff2c368ffd2"></div>
+        </div>
     </section>
-
+    
     <!-- Hobbies & Interests Section (Replaces Projects) -->
     <section id="hobbies" class="py-20 bg-slate-50">
         <div class="w-full max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -197,7 +203,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- Hobby 1 -->
                 <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-slate-100 group">
-                    <div class="h-64 overflow-hidden relative">
+                    <div class="h-96 overflow-hidden relative">
                         <!-- Placeholder Image Block 1 -->
                         <img src="images/music2.jpeg" alt="Hobby 1" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                         <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
@@ -212,7 +218,7 @@
 
                 <!-- Hobby 2 -->
                 <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-slate-100 group">
-                    <div class="h-64 overflow-hidden relative">
+                    <div class="h-96 overflow-hidden relative">
                          <!-- Placeholder Image Block 2 -->
                         <img src="images/jogging.jpeg" alt="Hobby 2" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                         <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
@@ -227,7 +233,7 @@
 
                 <!-- Hobby 3 -->
                 <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-slate-100 group">
-                    <div class="h-64 overflow-hidden relative">
+                    <div class="h-96 overflow-hidden relative">
                          <!-- Placeholder Image Block 3 -->
                         <img src="images/yediuluasik.jpeg" alt="Hobby 3" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                         <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
@@ -242,7 +248,7 @@
 
                 <!-- Hobby 4 -->
                 <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-slate-100 group">
-                    <div class="h-64 overflow-hidden relative">
+                    <div class="h-96 overflow-hidden relative">
                          <!-- Placeholder Image Block 4 -->
                         <img src="images/JollyRoger.jpeg" alt="Hobby 4" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                         <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>

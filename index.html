@@ -96,70 +96,72 @@
                 <!-- Added text-center to container -->
                 <div class="w-full text-center">
                     <h2 class="text-3xl font-bold text-slate-900 mb-6">About Me</h2>
-                    <!-- Added mx-auto to center the paragraph block -->
-                    <p class="text-slate-600 mb-12 leading-relaxed text-lg max-w-3xl mx-auto">
+                    <!-- Changed max-w-3xl to max-w-4xl to be slightly wider but still readable -->
+                    <p class="text-slate-600 mb-12 leading-relaxed text-lg max-w-4xl mx-auto">
                         I’m a simple guy, born and raised in <span class="font-semibold text-slate-900">Berlin, Neukölln</span> — and pretty passionate about it.
                         <br>My first name comes from „direnmek“ which means <span class="font-semibold text-slate-900">resisting</span>, and my last name translates to <span class="font-semibold text-slate-900">the upright / righteous one</span>. So my parents basically gave me a lifelong challenge, but I’m doing my best to live up to it.<br>
                     </p>
                     
-                    <!-- Career & Education Timeline -->
-                    <!-- Use grid to control layout width while keeping items readable -->
-                    <div class="mb-16 max-w-4xl mx-auto text-left"> 
-                        <h2 class="text-2xl font-bold text-slate-900 mb-8 flex items-center justify-center gap-2">
-                            <i class="fas fa-history text-primary"></i> Professional Career
-                        </h2>
-                        <div class="border-l-4 border-slate-200 ml-3 space-y-10 pl-8 relative">
-                            <!-- Item 3 -->
-                            <div class="relative">
-                                <span class="absolute -left-[43px] top-1.5 h-6 w-6 rounded-full border-4 border-white bg-slate-300"></span>
-                                <!-- Increased font sizes: text-xl for title, text-base for date -->
-                                <h4 class="text-xl font-bold text-slate-900">Working student in project management - specializing in AI</h4>
-                                <p class="text-base text-slate-500 mb-2 font-medium">06/2025 - today • Sportstech Brand Holding GmbH Berln </p>
-                                <p class="text-lg text-slate-600"></p>
-                            </div>
-                            <!-- Item 2 -->
-                            <div class="relative">
-                                <span class="absolute -left-[43px] top-1.5 h-6 w-6 rounded-full border-4 border-white bg-primary"></span>
-                                <h4 class="text-xl font-bold text-slate-900">Socio-educational management</h4>
-                                <p class="text-base text-slate-500 mb-2 font-medium">04/2024 - 07/2024 • Pestalozzi-Fröbel-Haus Berln </p>
-                                <p class="text-lg text-slate-600"></p>
-                            </div>
-                            <!-- Item 1 -->
-                            <div class="relative">
-                                <span class="absolute -left-[43px] top-1.5 h-6 w-6 rounded-full border-4 border-white bg-primary"></span>
-                                <h4 class="text-xl font-bold text-slate-900">Intern in application and project management</h4>
-                                <p class="text-base text-slate-500 mb-2 font-medium">04/2023 - 09/2023 • S-Bahn Berlin</p>
-                                <p class="text-lg text-slate-600"></p>
+                    <!-- Timelines Container: Now a 2-column grid matching the Hobbies section layout -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left mb-16"> 
+                        
+                        <!-- Professional Career Column -->
+                        <div>
+                            <h2 class="text-2xl font-bold text-slate-900 mb-8 flex items-center gap-2">
+                                <i class="fas fa-history text-primary"></i> Professional Career
+                            </h2>
+                            <div class="border-l-4 border-slate-200 ml-3 space-y-10 pl-8 relative">
+                                <!-- Item 3 -->
+                                <div class="relative">
+                                    <span class="absolute -left-[43px] top-1.5 h-6 w-6 rounded-full border-4 border-white bg-slate-300"></span>
+                                    <h4 class="text-xl font-bold text-slate-900">Working student in project management - specializing in AI</h4>
+                                    <p class="text-base text-slate-500 mb-2 font-medium">06/2025 - today • Sportstech Brand Holding GmbH Berln </p>
+                                    <p class="text-lg text-slate-600"></p>
+                                </div>
+                                <!-- Item 2 -->
+                                <div class="relative">
+                                    <span class="absolute -left-[43px] top-1.5 h-6 w-6 rounded-full border-4 border-white bg-primary"></span>
+                                    <h4 class="text-xl font-bold text-slate-900">Socio-educational management</h4>
+                                    <p class="text-base text-slate-500 mb-2 font-medium">04/2024 - 07/2024 • Pestalozzi-Fröbel-Haus Berln </p>
+                                    <p class="text-lg text-slate-600"></p>
+                                </div>
+                                <!-- Item 1 -->
+                                <div class="relative">
+                                    <span class="absolute -left-[43px] top-1.5 h-6 w-6 rounded-full border-4 border-white bg-primary"></span>
+                                    <h4 class="text-xl font-bold text-slate-900">Intern in application and project management</h4>
+                                    <p class="text-base text-slate-500 mb-2 font-medium">04/2023 - 09/2023 • S-Bahn Berlin</p>
+                                    <p class="text-lg text-slate-600"></p>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- Academic Background Timeline -->
-                    <div class="mb-16 max-w-4xl mx-auto text-left">
-                        <h2 class="text-2xl font-bold text-slate-900 mb-8 flex items-center justify-center gap-2">
-                            <i class="fas fa-graduation-cap text-primary"></i> Academic Background
-                        </h2>
-                        <div class="border-l-4 border-slate-200 ml-3 space-y-10 pl-8 relative">
-                            <!-- Item 3 -->
-                            <div class="relative">
-                                <span class="absolute -left-[43px] top-1.5 h-6 w-6 rounded-full border-4 border-white bg-slate-300"></span>
-                                <h4 class="text-xl font-bold text-slate-900">M.Sc.Business Intelligence and Process Management</h4>
-                                <p class="text-base text-slate-500 mb-2 font-medium">2025 - today • HWR Berln </p>
-                                <p class="text-lg text-slate-600"></p>
-                            </div>
-                            <!-- Item 2 -->
-                            <div class="relative">
-                                <span class="absolute -left-[43px] top-1.5 h-6 w-6 rounded-full border-4 border-white bg-primary"></span>
-                                <h4 class="text-xl font-bold text-slate-900">M.Sc.Media Computer Science</h4>
-                                <p class="text-base text-slate-500 mb-2 font-medium">2025 - 2025 • BHT Berln </p>
-                                <p class="text-lg text-slate-600"></p>
-                            </div>
-                            <!-- Item 1 -->
-                            <div class="relative">
-                                <span class="absolute -left-[43px] top-1.5 h-6 w-6 rounded-full border-4 border-white bg-primary"></span>
-                                <h4 class="text-xl font-bold text-slate-900">B.Sc. Business Information Technology</h4>
-                                <p class="text-base text-slate-500 mb-2 font-medium">2020 - 2024 • HWR Berlin</p>
-                                <p class="text-lg text-slate-600"></p>
+                        <!-- Academic Background Column -->
+                        <div>
+                            <h2 class="text-2xl font-bold text-slate-900 mb-8 flex items-center gap-2">
+                                <i class="fas fa-graduation-cap text-primary"></i> Academic Background
+                            </h2>
+                            <div class="border-l-4 border-slate-200 ml-3 space-y-10 pl-8 relative">
+                                <!-- Item 3 -->
+                                <div class="relative">
+                                    <span class="absolute -left-[43px] top-1.5 h-6 w-6 rounded-full border-4 border-white bg-slate-300"></span>
+                                    <h4 class="text-xl font-bold text-slate-900">M.Sc.Business Intelligence and Process Management</h4>
+                                    <p class="text-base text-slate-500 mb-2 font-medium">2025 - today • HWR Berln </p>
+                                    <p class="text-lg text-slate-600"></p>
+                                </div>
+                                <!-- Item 2 -->
+                                <div class="relative">
+                                    <span class="absolute -left-[43px] top-1.5 h-6 w-6 rounded-full border-4 border-white bg-primary"></span>
+                                    <h4 class="text-xl font-bold text-slate-900">M.Sc.Media Computer Science</h4>
+                                    <p class="text-base text-slate-500 mb-2 font-medium">2025 - 2025 • BHT Berln </p>
+                                    <p class="text-lg text-slate-600"></p>
+                                </div>
+                                <!-- Item 1 -->
+                                <div class="relative">
+                                    <span class="absolute -left-[43px] top-1.5 h-6 w-6 rounded-full border-4 border-white bg-primary"></span>
+                                    <h4 class="text-xl font-bold text-slate-900">B.Sc. Business Information Technology</h4>
+                                    <p class="text-base text-slate-500 mb-2 font-medium">2020 - 2024 • HWR Berlin</p>
+                                    <p class="text-lg text-slate-600"></p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -177,19 +179,16 @@
         </div>
 
         <!-- Map Section -->
-        <!-- Inherits increased padding from parent section -->
         <div class="mt-20 w-full">
             <div class="w-full max-w-screen-2xl mx-auto text-center">
                 <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center justify-center gap-2">
                     <i class="fas fa-map-marker-alt text-primary"></i> My Journey Map
                 </h2>
-                <!-- Adjusted text -->
                 <p class="text-slate-600 mb-8 text-lg">
                     Careful, don't let yourself be overwhelmed.
                 </p>
-                <!-- Map Container: Changed dimensions for horizontal landscape look -->
-                <!-- max-w-5xl (wider), h-[450px] (shorter relative to width) -->
-                <div class="rounded-xl overflow-hidden shadow-sm border border-slate-200 h-[450px] relative w-full max-w-5xl mx-auto">
+                <!-- Map Container: Removed max-w-5xl to allow full width matching other sections -->
+                <div class="rounded-xl overflow-hidden shadow-sm border border-slate-200 h-[450px] relative w-full mx-auto">
                      <div id="map_1d7660d6b4ccfe70cec96ff2c368ffd2" ></div>
                 </div>
             </div>

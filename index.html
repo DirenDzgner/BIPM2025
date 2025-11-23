@@ -60,14 +60,17 @@
         #map_1d7660d6b4ccfe70cec96ff2c368ffd2 {
             position: relative;
             width: 100.0%;
-            height: 600px; /* Adjust this height as needed */
+            height: 100%; /* Height is controlled by parent container */
         }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased">
 
+    <!-- Increased padding for buffer: px-8 sm:px-12 lg:px-24 -->
+
     <!-- Hero Section -->
-    <section id="home" class="pt-32 pb-20 md:pt-40 md:pb-28 px-4">
+    <!-- Increased padding for buffer: px-8 sm:px-12 lg:px-24 -->
+    <section id="home" class="pt-32 pb-20 md:pt-40 md:pb-28 w-full px-8 sm:px-12 lg:px-24">
         <div class="w-full max-w-screen-2xl mx-auto text-center fade-in">
             <div class="inline-block mb-4 px-3 py-1 bg-blue-100 text-primary rounded-full text-sm font-semibold tracking-wide">
                 Hello 👋
@@ -79,122 +82,124 @@
                 Student of Master of Business Intelligence and Process Management,
                 and very sorry for creating this Website so late Herr Löcher
             </p>
-            </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-20 bg-white">
-        <div class="w-full max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
-            <!-- Top Layout: Image & Intro -->
+    <!-- Increased padding for buffer: px-8 sm:px-12 lg:px-24 -->
+    <section id="about" class="py-20 bg-white w-full px-8 sm:px-12 lg:px-24">
+        <div class="w-full max-w-screen-2xl mx-auto">
+            <!-- Top Layout: Intro -->
             <div class="flex flex-col md:flex-row items-start gap-12 mb-16">
                 
                 <!-- Content -->
-                <div class="w-full md:w-2/3">
+                <!-- Added text-center to container -->
+                <div class="w-full text-center">
                     <h2 class="text-3xl font-bold text-slate-900 mb-6">About Me</h2>
-                    <p class="text-slate-600 mb-6 leading-relaxed">
+                    <!-- Added mx-auto to center the paragraph block -->
+                    <p class="text-slate-600 mb-12 leading-relaxed text-lg max-w-3xl mx-auto">
                         I’m a simple guy, born and raised in <span class="font-semibold text-slate-900">Berlin, Neukölln</span> — and pretty passionate about it.
-                        <br>My first name comes from „direnmek“ which means <span class="font-semibold text-slate-900">resisting</span>, and my last name translates to <span class="font-semibold text-slate-900">the upright / righteous one</span>. So my parents basically gave me a lifelong challenge, but I’m doing my best to live up to it.</br>
+                        <br>My first name comes from „direnmek“ which means <span class="font-semibold text-slate-900">resisting</span>, and my last name translates to <span class="font-semibold text-slate-900">the upright / righteous one</span>. So my parents basically gave me a lifelong challenge, but I’m doing my best to live up to it.<br>
                     </p>
                     
                     <!-- Career & Education Timeline -->
-                    <div class="mb-10">
-                        <h2 class="text-xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+                    <!-- Use grid to control layout width while keeping items readable -->
+                    <div class="mb-16 max-w-4xl mx-auto text-left"> 
+                        <h2 class="text-2xl font-bold text-slate-900 mb-8 flex items-center justify-center gap-2">
                             <i class="fas fa-history text-primary"></i> Professional Career
                         </h2>
-                        <div class="border-l-2 border-slate-200 ml-3 space-y-8 pl-8 relative">
+                        <div class="border-l-4 border-slate-200 ml-3 space-y-10 pl-8 relative">
                             <!-- Item 3 -->
                             <div class="relative">
-                                <span class="absolute -left-[41px] top-1 h-5 w-5 rounded-full border-4 border-white bg-slate-300"></span>
-                                <h4 class="text-lg font-bold text-slate-900">Working student in project management - specializing in AI</h4>
-                                <p class="text-sm text-slate-500 mb-1">06/2025 - today • Sportstech Brand Holding GmbH Berln </p>
-                                <p class="text-slate-600"></p>
+                                <span class="absolute -left-[43px] top-1.5 h-6 w-6 rounded-full border-4 border-white bg-slate-300"></span>
+                                <!-- Increased font sizes: text-xl for title, text-base for date -->
+                                <h4 class="text-xl font-bold text-slate-900">Working student in project management - specializing in AI</h4>
+                                <p class="text-base text-slate-500 mb-2 font-medium">06/2025 - today • Sportstech Brand Holding GmbH Berln </p>
+                                <p class="text-lg text-slate-600"></p>
                             </div>
                             <!-- Item 2 -->
                             <div class="relative">
-                                <span class="absolute -left-[41px] top-1 h-5 w-5 rounded-full border-4 border-white bg-primary"></span>
-                                <h4 class="text-lg font-bold text-slate-900">Socio-educational management</h4>
-                                <p class="text-sm text-slate-500 mb-1">04/2024 - 07/2024 • Pestalozzi-Fröbel-Haus Berln </p>
-                                <p class="text-slate-600"></p>
+                                <span class="absolute -left-[43px] top-1.5 h-6 w-6 rounded-full border-4 border-white bg-primary"></span>
+                                <h4 class="text-xl font-bold text-slate-900">Socio-educational management</h4>
+                                <p class="text-base text-slate-500 mb-2 font-medium">04/2024 - 07/2024 • Pestalozzi-Fröbel-Haus Berln </p>
+                                <p class="text-lg text-slate-600"></p>
                             </div>
                             <!-- Item 1 -->
                             <div class="relative">
-                                <span class="absolute -left-[41px] top-1 h-5 w-5 rounded-full border-4 border-white bg-primary"></span>
-                                <h4 class="text-lg font-bold text-slate-900">Intern in application and project management</h4>
-                                <p class="text-sm text-slate-500 mb-1">04/2023 - 09/2023 • S-Bahn Berlin</p>
-                                <p class="text-slate-600"></p>
+                                <span class="absolute -left-[43px] top-1.5 h-6 w-6 rounded-full border-4 border-white bg-primary"></span>
+                                <h4 class="text-xl font-bold text-slate-900">Intern in application and project management</h4>
+                                <p class="text-base text-slate-500 mb-2 font-medium">04/2023 - 09/2023 • S-Bahn Berlin</p>
+                                <p class="text-lg text-slate-600"></p>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Career & Education Timeline -->
-                    <div class="mb-10">
-                        <h2 class="text-xl font-bold text-slate-900 mb-6 flex items-center gap-2">
-                            <i class="fas fa-history text-primary"></i> Academic Background
+                    <!-- Academic Background Timeline -->
+                    <div class="mb-16 max-w-4xl mx-auto text-left">
+                        <h2 class="text-2xl font-bold text-slate-900 mb-8 flex items-center justify-center gap-2">
+                            <i class="fas fa-graduation-cap text-primary"></i> Academic Background
                         </h2>
-                        <div class="border-l-2 border-slate-200 ml-3 space-y-8 pl-8 relative">
+                        <div class="border-l-4 border-slate-200 ml-3 space-y-10 pl-8 relative">
                             <!-- Item 3 -->
                             <div class="relative">
-                                <span class="absolute -left-[41px] top-1 h-5 w-5 rounded-full border-4 border-white bg-slate-300"></span>
-                                <h4 class="text-lg font-bold text-slate-900">M.Sc.Business Intelligence and Process Management</h4>
-                                <p class="text-sm text-slate-500 mb-1">2025 - today • HWR Berln </p>
-                                <p class="text-slate-600"></p>
+                                <span class="absolute -left-[43px] top-1.5 h-6 w-6 rounded-full border-4 border-white bg-slate-300"></span>
+                                <h4 class="text-xl font-bold text-slate-900">M.Sc.Business Intelligence and Process Management</h4>
+                                <p class="text-base text-slate-500 mb-2 font-medium">2025 - today • HWR Berln </p>
+                                <p class="text-lg text-slate-600"></p>
                             </div>
                             <!-- Item 2 -->
                             <div class="relative">
-                                <span class="absolute -left-[41px] top-1 h-5 w-5 rounded-full border-4 border-white bg-primary"></span>
-                                <h4 class="text-lg font-bold text-slate-900">M.Sc.Media Computer Science</h4>
-                                <p class="text-sm text-slate-500 mb-1">2025 - 2025 • BHT Berln </p>
-                                <p class="text-slate-600"></p>
+                                <span class="absolute -left-[43px] top-1.5 h-6 w-6 rounded-full border-4 border-white bg-primary"></span>
+                                <h4 class="text-xl font-bold text-slate-900">M.Sc.Media Computer Science</h4>
+                                <p class="text-base text-slate-500 mb-2 font-medium">2025 - 2025 • BHT Berln </p>
+                                <p class="text-lg text-slate-600"></p>
                             </div>
                             <!-- Item 1 -->
                             <div class="relative">
-                                <span class="absolute -left-[41px] top-1 h-5 w-5 rounded-full border-4 border-white bg-primary"></span>
-                                <h4 class="text-lg font-bold text-slate-900">B.Sc. Business Information Technology</h4>
-                                <p class="text-sm text-slate-500 mb-1">2020 - 2024 • HWR Berlin</p>
-                                <p class="text-slate-600"></p>
+                                <span class="absolute -left-[43px] top-1.5 h-6 w-6 rounded-full border-4 border-white bg-primary"></span>
+                                <h4 class="text-xl font-bold text-slate-900">B.Sc. Business Information Technology</h4>
+                                <p class="text-base text-slate-500 mb-2 font-medium">2020 - 2024 • HWR Berlin</p>
+                                <p class="text-lg text-slate-600"></p>
                             </div>
                         </div>
                     </div>
 
                     <!-- Tech Stack Tags -->
-                    <h3 class="text-sm font-bold uppercase text-slate-400 mb-4 tracking-wider">My Tech Stack</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-md text-sm font-medium border border-slate-200">apperently HTML</span>
-                        <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-md text-sm font-medium border border-slate-200">Python</span>
-                        <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-md text-sm font-medium border border-slate-200">Java</span>
-                        <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-md text-sm font-medium border border-slate-200">SQL</span>
+                    <h3 class="text-base font-bold uppercase text-slate-400 mb-6 tracking-wider">My Tech Stack</h3>
+                    <div class="flex flex-wrap justify-center gap-3">
+                        <span class="px-4 py-2 bg-slate-100 text-slate-700 rounded-md text-base font-medium border border-slate-200">Apparently HTML</span>
+                        <span class="px-4 py-2 bg-slate-100 text-slate-700 rounded-md text-base font-medium border border-slate-200">Python</span>
+                        <span class="px-4 py-2 bg-slate-100 text-slate-700 rounded-md text-base font-medium border border-slate-200">Java</span>
+                        <span class="px-4 py-2 bg-slate-100 text-slate-700 rounded-md text-base font-medium border border-slate-200">SQL</span>
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- Map Section -->
-        <div class="mb-10">
-            <h2 class="text-xl font-bold text-slate-900 mb-6 flex items-center gap-2">
-                <i class="fas fa-map-marker-alt text-primary"></i> My Jounrey Map
-            </h2>
-           <h3 class="text-xl font-bold text-slate-900 mb-6 flex items-center gap-2">
-                <i class="fas fa-map-marker-alt text-primary"></i> Careful, don't let yourself be overwhelmed.
-            </h3>
-         <!-- Added max-w-2xl to constrain the map width so it doesn't stretch horizontally too much -->
-            <div class="rounded-xl overflow-hidden shadow-sm border border-slate-200 h-96 md:h-80 relative w-full max-w-2xl">
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d155426.1369466089!2d13.3029161!3d52.4862437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e373f035901%3A0x42120465b5e3b70!2sBerlin!5e0!3m2!1sen!2sde!4v1684846288154!5m2!1sen!2sde" 
-                    width="100%" 
-                    height="100%" 
-                    style="border:0;" 
-                    allowfullscreen="" 
-                    loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
+        <!-- Inherits increased padding from parent section -->
+        <div class="mt-20 w-full">
+            <div class="w-full max-w-screen-2xl mx-auto text-center">
+                <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center justify-center gap-2">
+                    <i class="fas fa-map-marker-alt text-primary"></i> My Journey Map
+                </h2>
+                <!-- Adjusted text -->
+                <p class="text-slate-600 mb-8 text-lg">
+                    Careful, don't let yourself be overwhelmed.
+                </p>
+                <!-- Map Container: Changed dimensions for horizontal landscape look -->
+                <!-- max-w-5xl (wider), h-[450px] (shorter relative to width) -->
+                <div class="rounded-xl overflow-hidden shadow-sm border border-slate-200 h-[450px] relative w-full max-w-5xl mx-auto">
+                     <div id="map_1d7660d6b4ccfe70cec96ff2c368ffd2" ></div>
+                </div>
             </div>
         </div>
     </section>
     
-    <!-- Hobbies & Interests Section (Replaces Projects) -->
-    <section id="hobbies" class="py-20 bg-slate-50">
-        <div class="w-full max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Hobbies & Interests Section -->
+    <!-- Increased padding for buffer: px-8 sm:px-12 lg:px-24 -->
+    <section id="hobbies" class="py-20 bg-slate-50 w-full px-8 sm:px-12 lg:px-24">
+        <div class="w-full max-w-screen-2xl mx-auto">
             <div class="text-center mb-16">
                 <h2 class="text-3xl font-bold text-slate-900 mb-4">Hobbies & Interests</h2>
                 <p class="text-slate-600 max-w-2xl mx-auto">Apart from BIPM, here are some things I love to do in my free time.</p>
@@ -203,8 +208,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- Hobby 1 -->
                 <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-slate-100 group">
-                    <div class="h-96 overflow-hidden relative">
-                        <!-- Placeholder Image Block 1 -->
+                    <div class="h-[400px] overflow-hidden relative">
                         <img src="images/music2.jpeg" alt="Hobby 1" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                         <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
                     </div>
@@ -218,8 +222,7 @@
 
                 <!-- Hobby 2 -->
                 <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-slate-100 group">
-                    <div class="h-96 overflow-hidden relative">
-                         <!-- Placeholder Image Block 2 -->
+                    <div class="h-[400px] overflow-hidden relative">
                         <img src="images/jogging.jpeg" alt="Hobby 2" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                         <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
                     </div>
@@ -233,23 +236,21 @@
 
                 <!-- Hobby 3 -->
                 <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-slate-100 group">
-                    <div class="h-96 overflow-hidden relative">
-                         <!-- Placeholder Image Block 3 -->
+                    <div class="h-[400px] overflow-hidden relative">
                         <img src="images/yediuluasik.jpeg" alt="Hobby 3" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                         <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-slate-900 mb-2 flex items-center gap-2">
-                            <i class="fas fa-camera text-orange-500"></i> Photography
+                            <i class="fas fa-book text-orange-500"></i> Philosophy
                         </h3>
-                        <p class="text-slate-600">I’m passionate about poetry and philosophy. The poetry I resonate with most comes from my own cultural roots. My favorite line is: “If you wish to understand the wisdom of truth, no religion or faith is needed but love.” ~ Aşık İbreti</p>
+                        <p class="text-slate-600">I’m passionate about poetry and philosophy, mainly from my own own cultural roots. My favorite line is: “If you wish to understand the wisdom of truth, no religion or faith is needed but love.” ~ Aşık İbreti</p>
                     </div>
                 </div>
 
                 <!-- Hobby 4 -->
                 <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-slate-100 group">
-                    <div class="h-96 overflow-hidden relative">
-                         <!-- Placeholder Image Block 4 -->
+                    <div class="h-[400px] overflow-hidden relative">
                         <img src="images/JollyRoger.jpeg" alt="Hobby 4" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                         <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
                     </div>
@@ -276,7 +277,7 @@
                 <a href="https://github.com/DirenDzgner" class="w-16 h-16 flex items-center justify-center rounded-full bg-slate-100 text-slate-600 hover:bg-slate-800 hover:text-white transition-all text-2xl">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="www.linkedin.com/in/diren-düzgüner-15a4b2239" class="w-16 h-16 flex items-center justify-center rounded-full bg-slate-100 text-slate-600 hover:bg-blue-700 hover:text-white transition-all text-2xl">
+                <a href="https://www.linkedin.com/in/diren-düzgüner-15a4b2239" class="w-16 h-16 flex items-center justify-center rounded-full bg-slate-100 text-slate-600 hover:bg-blue-700 hover:text-white transition-all text-2xl">
                     <i class="fab fa-linkedin-in"></i>
                 </a>
             </div>
@@ -295,31 +296,44 @@
             menu.classList.toggle('hidden');
         }
 
-        // Scroll to Top Button Logic
-        const backToTopButton = document.getElementById('backToTop');
+        // Wrap init code to prevent global scope errors
+        document.addEventListener('DOMContentLoaded', () => {
+             // Scroll to Top Button Logic
+             const backToTopButton = document.getElementById('backToTop');
 
-        window.onscroll = function() {
-            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-                backToTopButton.classList.remove('opacity-0', 'pointer-events-none');
-            } else {
-                backToTopButton.classList.add('opacity-0', 'pointer-events-none');
-            }
-        };
+             if (backToTopButton) {
+                 window.onscroll = function() {
+                     if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                         backToTopButton.classList.remove('opacity-0', 'pointer-events-none');
+                     } else {
+                         backToTopButton.classList.add('opacity-0', 'pointer-events-none');
+                     }
+                 };
+             }
+
+             // Smooth Scrolling for Anchor Links
+             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                 anchor.addEventListener('click', function (e) {
+                     e.preventDefault();
+                     const targetId = this.getAttribute('href');
+                     if (targetId === '#') return;
+                     
+                     const targetElement = document.querySelector(targetId);
+                     if (targetElement) {
+                         targetElement.scrollIntoView({
+                             behavior: 'smooth'
+                         });
+                     }
+                 });
+             });
+        });
 
         function scrollToTop() {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
-
-        // Smooth Scrolling for Anchor Links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
     </script>
+    
+    <!-- Map Script -->
     <script>
         var map_1d7660d6b4ccfe70cec96ff2c368ffd2 = L.map(
             "map_1d7660d6b4ccfe70cec96ff2c368ffd2",
